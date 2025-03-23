@@ -1,0 +1,617 @@
+{
+  "dimensions": {
+    "width": 10,
+    "height": 10
+  },
+  "tiles": [
+    {
+      "position": {"x": 0, "y": 0},
+      "type": "water",
+      "height": 0.0,
+      "navigation": {"boat": true, "foot": false}
+    },
+    {
+      "position": {"x": 0, "y": 1},
+      "type": "water",
+      "height": 0.0,
+      "navigation": {"boat": true, "foot": false}
+    },
+    {
+      "position": {"x": 0, "y": 2},
+      "type": "water",
+      "height": 0.0,
+      "navigation": {"boat": true, "foot": false}
+    },
+    {
+      "position": {"x": 0, "y": 3},
+      "type": "water",
+      "height": 0.0,
+      "navigation": {"boat": true, "foot": false}
+    },
+    {
+      "position": {"x": 0, "y": 4},
+      "type": "water",
+      "height": 0.0,
+      "navigation": {"boat": true, "foot": false}
+    },
+    {
+      "position": {"x": 0, "y": 5},
+      "type": "water",
+      "height": 0.0,
+      "navigation": {"boat": true, "foot": false}
+    },
+    {
+      "position": {"x": 0, "y": 6},
+      "type": "water",
+      "height": 0.0,
+      "navigation": {"boat": true, "foot": false}
+    },
+    {
+      "position": {"x": 0, "y": 7},
+      "type": "water",
+      "height": 0.0,
+      "navigation": {"boat": true, "foot": false}
+    },
+    {
+      "position": {"x": 0, "y": 8},
+      "type": "water",
+      "height": 0.0,
+      "navigation": {"boat": true, "foot": false}
+    },
+    {
+      "position": {"x": 0, "y": 9},
+      "type": "water",
+      "height": 0.0,
+      "navigation": {"boat": true, "foot": false}
+    },
+    {
+      "position": {"x": 1, "y": 0},
+      "type": "water",
+      "height": 0.0,
+      "navigation": {"boat": true, "foot": false}
+    },
+    {
+      "position": {"x": 1, "y": 1},
+      "type": "water",
+      "height": 0.0,
+      "navigation": {"boat": true, "foot": false}
+    },
+    {
+      "position": {"x": 1, "y": 2},
+      "type": "water",
+      "height": 0.0,
+      "navigation": {"boat": true, "foot": false}
+    },
+    {
+      "position": {"x": 1, "y": 3},
+      "type": "water",
+      "height": 0.0,
+      "navigation": {"boat": true, "foot": false}
+    },
+    {
+      "position": {"x": 1, "y": 4},
+      "type": "water",
+      "height": 0.0,
+      "navigation": {"boat": true, "foot": false}
+    },
+    {
+      "position": {"x": 1, "y": 5},
+      "type": "water",
+      "height": 0.0,
+      "navigation": {"boat": true, "foot": false}
+    },
+    {
+      "position": {"x": 1, "y": 6},
+      "type": "water",
+      "height": 0.0,
+      "navigation": {"boat": true, "foot": false}
+    },
+    {
+      "position": {"x": 1, "y": 7},
+      "type": "water",
+      "height": 0.0,
+      "navigation": {"boat": true, "foot": false}
+    },
+    {
+      "position": {"x": 1, "y": 8},
+      "type": "water",
+      "height": 0.0,
+      "navigation": {"boat": true, "foot": false}
+    },
+    {
+      "position": {"x": 1, "y": 9},
+      "type": "water",
+      "height": 0.0,
+      "navigation": {"boat": true, "foot": false}
+    },
+    {
+      "position": {"x": 2, "y": 0},
+      "type": "sand",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 2, "y": 1},
+      "type": "sand",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 2, "y": 2},
+      "type": "sand",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 2, "y": 3},
+      "type": "sand",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 2, "y": 4},
+      "type": "sand",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 2, "y": 5},
+      "type": "sand",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 2, "y": 6},
+      "type": "sand",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 2, "y": 7},
+      "type": "sand",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 2, "y": 8},
+      "type": "sand",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 2, "y": 9},
+      "type": "sand",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 3, "y": 0},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true},
+      "resources": ["wood"]
+    },
+    {
+      "position": {"x": 3, "y": 1},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 3, "y": 2},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true},
+      "resources": ["wood"]
+    },
+    {
+      "position": {"x": 3, "y": 3},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 3, "y": 4},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 3, "y": 5},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 3, "y": 6},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 3, "y": 7},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true},
+      "resources": ["wood"]
+    },
+    {
+      "position": {"x": 3, "y": 8},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 3, "y": 9},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 4, "y": 0},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 4, "y": 1},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 4, "y": 2},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 4, "y": 3},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true},
+      "resources": ["wood"]
+    },
+    {
+      "position": {"x": 4, "y": 4},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 4, "y": 5},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 4, "y": 6},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 4, "y": 7},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 4, "y": 8},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 4, "y": 9},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 5, "y": 0},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 5, "y": 1},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 5, "y": 2},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 5, "y": 3},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 5, "y": 4},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 5, "y": 5},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true},
+      "entities": ["villster"]
+    },
+    {
+      "position": {"x": 5, "y": 6},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 5, "y": 7},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 5, "y": 8},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true},
+      "resources": ["wood"]
+    },
+    {
+      "position": {"x": 5, "y": 9},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 6, "y": 0},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 6, "y": 1},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 6, "y": 2},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 6, "y": 3},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 6, "y": 4},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true},
+      "resources": ["stone"]
+    },
+    {
+      "position": {"x": 6, "y": 5},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 6, "y": 6},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 6, "y": 7},
+      "type": "grass",
+      "height": 1.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 6, "y": 8},
+      "type": "grass",
+      "height": 1.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 6, "y": 9},
+      "type": "grass",
+      "height": 1.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 7, "y": 0},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 7, "y": 1},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true},
+      "resources": ["wood"]
+    },
+    {
+      "position": {"x": 7, "y": 2},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 7, "y": 3},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 7, "y": 4},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 7, "y": 5},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 7, "y": 6},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 7, "y": 7},
+      "type": "grass",
+      "height": 1.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 7, "y": 8},
+      "type": "grass",
+      "height": 2.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 7, "y": 9},
+      "type": "grass",
+      "height": 2.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 8, "y": 0},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 8, "y": 1},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 8, "y": 2},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 8, "y": 3},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 8, "y": 4},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 8, "y": 5},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 8, "y": 6},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 8, "y": 7},
+      "type": "grass",
+      "height": 1.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 8, "y": 8},
+      "type": "grass",
+      "height": 2.0,
+      "navigation": {"boat": false, "foot": true},
+      "resources": ["iron"]
+    },
+    {
+      "position": {"x": 8, "y": 9},
+      "type": "grass",
+      "height": 2.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 9, "y": 0},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 9, "y": 1},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 9, "y": 2},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 9, "y": 3},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 9, "y": 4},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 9, "y": 5},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 9, "y": 6},
+      "type": "grass",
+      "height": 0.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 9, "y": 7},
+      "type": "grass",
+      "height": 1.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 9, "y": 8},
+      "type": "grass",
+      "height": 2.0,
+      "navigation": {"boat": false, "foot": true}
+    },
+    {
+      "position": {"x": 9, "y": 9},
+      "type": "grass",
+      "height": 2.0,
+      "navigation": {"boat": false, "foot": true}
+    }
+  ]
+} 
