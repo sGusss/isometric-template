@@ -1,4 +1,4 @@
-﻿@tool
+@tool
 class_name TileFactory extends Node3D
 
 # Tile visual properties
@@ -61,6 +61,9 @@ func _setup_tile_definitions() -> void:
 	var sand_mat = StandardMaterial3D.new()
 	sand_mat.albedo_color = Color(0.9, 0.8, 0.5)
 	
+	var road_mat = StandardMaterial3D.new()
+	road_mat.albedo_color = Color(0.3, 0.3, 0.3)
+	
 	_tile_definitions = {
 		"grass": {
 			"material": grass_mat,
@@ -72,6 +75,18 @@ func _setup_tile_definitions() -> void:
 		},
 		"sand": {
 			"material": sand_mat,
+			"mesh": null
+		},
+		"road": {
+			"material": road_mat,
+			"mesh": null
+		},
+		"intersection_4way": {
+			"material": road_mat,
+			"mesh": null
+		},
+		"intersection_t_junction": {
+			"material": road_mat,
 			"mesh": null
 		}
 	}

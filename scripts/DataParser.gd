@@ -28,6 +28,10 @@ func parse_json_file(file_path: String) -> Dictionary:
 	
 	var map_data = json.get_data()
 	
+	# Check if it's an NSID level format
+	if map_data.has("level_meta"):
+		map_data = _parse_nsid_level(map_data)
+	
 	# Validate map data
 	if not validate_map_data(map_data):
 		push_error("Invalid map data format")
@@ -103,6 +107,96 @@ func parse_csv_file(file_path: String, has_header: bool = true) -> Dictionary:
 	
 	# Emit signal (commented out until used)
 	# emit_signal("_parsing_complete", map_data)
+	return map_data
+
+func _parse_nsid_level(data: Dictionary) -> Dictionary:
+	var map_data = {}
+	map_data["tiles"] = []
+	var max_x = 0
+	var max_y = 0
+	
+	if data.has("level_meta"):
+		map_data["level_meta"] = data["level_meta"]
+
+	# Parse Road Graph
+	if data.has("road_graph"):
+		var graph = data["road_graph"]
+		var nodes = {}
+		
+		# Process Nodes
+		if graph.has("nodes"):
+			for node in graph["nodes"]:
+				var id = node["id"]
+				var coords = node["iso_coords"]
+				var type = node.get("type", "road")
+				
+				var x = int(coords[0])
+				var y = int(coords[1])
+				
+				nodes[id] = Vector2i(x, y)
+				max_x = max(max_x, x)
+				max_y = max(max_y, y)
+				
+				map_data["tiles"].append({
+					"position": {"x": x, "y": y},
+					"type": type,
+					"height": 0.0,
+					"id": id
+				})
+		
+		# Process Edges (Simple line drawing)
+		if graph.has("edges"):
+			for edge in graph["edges"]:
+				var start_id = edge["from"]
+				var end_id = edge["to"]
+				
+				if nodes.has(start_id) and nodes.has(end_id):
+					var start = nodes[start_id]
+					var end = nodes[end_id]
+					
+					var diff = end - start
+					var steps = max(abs(diff.x), abs(diff.y))
+					
+					for i in range(1, steps):
+						var t = float(i) / steps
+						var pos = start.lerp(Vector2(end), t).round()
+						var x = int(pos.x)
+						var y = int(pos.y)
+						
+						# Check if tile already exists
+						var exists = false
+						for tile in map_data["tiles"]:
+							if tile["position"]["x"] == x and tile["position"]["y"] == y:
+								exists = true
+								break
+						
+						if not exists:
+							map_data["tiles"].append({
+								"position": {"x": x, "y": y},
+								"type": "road",
+								"height": 0.0
+							})
+	
+	map_data["dimensions"] = {
+		"width": max_x + 5,
+		"height": max_y + 5
+	}
+	
+	# Fill background with grass
+	for y in range(map_data["dimensions"]["height"]):
+		for x in range(map_data["dimensions"]["width"]):
+			var exists = false
+			for tile in map_data["tiles"]:
+				if tile["position"]["x"] == x and tile["position"]["y"] == y:
+					exists = true
+					break
+			if not exists:
+				map_data["tiles"].append({
+					"position": {"x": x, "y": y},
+					"type": "grass",
+					"height": 0.0
+				})
+				
 	return map_data
 
 # Validate that map data has the correct format

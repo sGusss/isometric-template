@@ -9,8 +9,10 @@ var _dev_tools: DeveloperTools
 var _map_interaction: MapInteractionHandler
 
 # Configuration
-@export var demo_map_path: String = "res://data/demo_map.json"
+@export var demo_map_path: String = "res://data/level_manifest.json"
 @export var load_map_on_ready: bool = true
+
+var current_level_meta: Dictionary = {}
 
 func _ready() -> void:
 	# Get references to required nodes
@@ -42,6 +44,8 @@ func load_demo_map() -> void:
 		print("Loading demo map from: ", demo_map_path)
 		var map_data = _data_parser.parse_json_file(demo_map_path)
 		if not map_data.is_empty():
+			if map_data.has("level_meta"):
+				current_level_meta = map_data["level_meta"]
 			_grid_manager.create_map(map_data)
 	else:
 		# If demo map doesn't exist, generate one
@@ -65,6 +69,8 @@ func load_map(file_path: String) -> void:
 			return
 			
 		if not map_data.is_empty():
+			if map_data.has("level_meta"):
+				current_level_meta = map_data["level_meta"]
 			_grid_manager.create_map(map_data)
 	else:
 		push_error("GameManager: File not found: " + file_path)

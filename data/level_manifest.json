@@ -1,0 +1,40 @@
+{
+  "level_meta": {
+    "id": "scenario_001_wet_commute",
+    "narrative_context": "Late for interview, heavy rain.",
+    "physics_modifiers": {
+      "global_friction_mult": 0.65, 
+      "visual_range_mult": 0.8
+    }
+  },
+  "grid_config": {
+    "tile_width": 64,
+    "tile_height": 32,
+    "orientation": "isometric_2_1"
+  },
+  "zones": [
+    {
+      "type": "school_zone",
+      "bounds": {"x": 10, "y": 10, "w": 8, "h": 8},
+      "rules": {
+        "speed_limit": 30,
+        "spawn_rate_pedestrian": 0.8,
+        "strict_stop_enforcement": true
+      }
+    }
+  ],
+  "road_graph": {
+    "nodes": [
+      {"id": "n1", "iso_coords": [1, 2], "type": "intersection_4way"},
+      {"id": "n2", "iso_coords": [3, 2], "type": "intersection_t_junction"}
+    ],
+    "edges": [
+      {
+        "from": "n1", 
+        "to": "n2", 
+        "lane_count": 2, 
+        "hazards": ["pothole_hidden"] 
+      }
+    ]
+  }
+}
